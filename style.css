@@ -107,6 +107,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 form div {
@@ -152,7 +153,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 1050px) {
+@media all and (min-width: 768px) {
   .group {
     display: flex;
     flex-direction: row;
@@ -181,5 +182,11 @@ footer p {
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+}
+
+@media all and (max-width: 368px) {
+  .logo {
+    font-size: 48px;
   }
 }
